@@ -1,0 +1,52 @@
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On 
+   RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+
+
+RewriteCond $1 !^(admin\.php)
+RewriteRule ^admin(.*)$ /admin.php/$1 [L]
+Options -Indexes
+RewriteRule ^public/control/.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|sh|pl|phps)$ - [F,L,NC]
+RewriteRule ^public/css/.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|sh|phps|pl)$ - [F,L,NC]
+RewriteRule ^public/uploads/.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|sh|phps|pl)$ - [F,L,NC]
+##RewriteRule ^public/front/.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|phps|pl)$ - [F,L,NC]
+RewriteRule ^public/js.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|sh|phps|pl)$ - [F,L,NC]
+##RewriteRule ^public/datepicker.*\.(php|php4|php5|php3|rb|py|asp|jsp|jspx|sh|phps|pl)$ - [F,L,NC]
+
+
+RewriteCond %{HTTP_USER_AGENT} ^" [OR]
+RewriteCond %{HTTP_USER_AGENT} =x00_-gawa.sa.pilipinas.2015 [OR]
+RewriteCond %{HTTP_USER_AGENT} =Jorgee [OR]
+RewriteCond %{HTTP_USER_AGENT} =ZmEu [OR]
+RewriteCond %{HTTP_USER_AGENT} =immoral [OR]
+RewriteCond %{HTTP_USER_AGENT} ^PHP/5\.{ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^.*\stools.ua.random [OR]
+RewriteCond %{HTTP_USER_AGENT} ^chroot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^DataCha0s [OR]
+RewriteCond %{HTTP_USER_AGENT} ^I'm\sa\smu\smu [OR]
+RewriteCond %{HTTP_USER_AGENT} ^\(\)\s{ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^q\[ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Morfeus\sFucking\sScanner
+RewriteRule ^blocked.php [END,E=error-notes:blacklisted-user-agent]
+
+
+
+
+
+
+##BEGIN EXPIRES
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 10 days"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/plain "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-icon "access plus 1 year"
+</IfModule>
