@@ -1,0 +1,67 @@
+{
+  "name": "Funny Ape Club #376",
+  "description": "Funny Ape Club ™ is a NFT collection of 10,000 Hilariously Funny Apes living on the ETH blockchain partnered with @iamdesibanks , @renny and @funnymarco. Owning a Funny Ape unlocks access to our club and benefits. All of the work and content included in Funny Ape Club are protected under US Trademark laws pending our application Funnyverse ™ is a custom Metaverse in development for FAC ecosystem DESI BANKS & FRIENDS OFFICIAL COLLABORATION We bring artists, fans and collectors together with comedy! Our 2022 Roadmap is filled with onboarding big names in the comedy space & more celebs influencers!",
+  "image": "ipfs://NewUriToReplace/376.png",
+  "dna": "5b5e9b344f1ffc53d6b4a952b81a2dd285320770",
+  "edition": 376,
+  "date": 1643117889629,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "kjhbh"
+    },
+    {
+      "trait_type": "Body",
+      "value": "kjnfgc"
+    },
+    {
+      "trait_type": "Shirts",
+      "value": "dd"
+    },
+    {
+      "trait_type": "Chains",
+      "value": "lkands"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Face"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "hjb"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "jnkn"
+    },
+    {
+      "trait_type": "Tears",
+      "value": "nhjb"
+    },
+    {
+      "trait_type": "Nose",
+      "value": "kjh"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "kjhb"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "nmbn"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "adfs"
+    },
+    {
+      "trait_type": "Earings",
+      "value": "hbd"
+    },
+    {
+      "trait_type": "Mucus",
+      "value": "Empty"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

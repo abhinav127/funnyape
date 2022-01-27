@@ -12,8 +12,7 @@
         <div class="footer-bottom">
           <div class="reserved-p"><span>Funnyapeclub.com </span>All Rights Reserved 2022</div>
           <div class="div-block-357">
-            <div class="contract-p">ERC20 Address: <span class="contract-address">0X179C17131074C67E068FAC2DA6221BABDAC157B1</span></div>
-            <div class="contract-p">ERC721 Address: <span class="contract-address">Coming Soon</span></div>
+            <div class="contract-p">ERC721 Address: <span class="contract-address">0xb7c31ac2f96797518b92706654f773a466de4752</span></div>
           </div>
         </div>
       </div>

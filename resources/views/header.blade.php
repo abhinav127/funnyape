@@ -7,7 +7,7 @@
     <meta content="Funny Ape Club - Desi Banks Official NFT's!" property="og:title">
     <meta content="Funny Ape Club - Desi Banks Official NFT's!" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="{{url('/')}}/css/nextools.css" rel="stylesheet" type="text/css">
+    <link href="{{url('/')}}/css/nextools.css?v7" rel="stylesheet" type="text/css">
     <script src="{{url('/')}}/js/webfont.js" type="text/javascript"></script>
     <link rel="stylesheet" href="{{url('/')}}/css/css.css" media="all"><script type="text/javascript">
       // WebFont.load({

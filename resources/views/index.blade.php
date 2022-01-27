@@ -321,7 +321,7 @@
           <div class="main-heading-wrap">
             <p class="name-title">FUNNY <span>APE</span> CLUB</p><img src="https://assets.website-files.com/61b1c74973c43044a36e16c5/61e58dda0ddc6694dc686408_image%203.png" loading="lazy" alt="" class="tape-main" />
           </div>
-          <p class="main-subtitle">We bring artists, fans and collectors together with comedy!</p><a href="{{url('mint')}}" target="_blank" class="first-link">Mint</a>
+          <p class="main-subtitle">We bring artists, fans and collectors together with comedy!</p><a href="{{url('mint')}}" target="" class="first-link">Mint</a>
         </div>
         <div class="swiper-cards">
           <div id="wheel-slider" class="wheel-slider">

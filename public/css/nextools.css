@@ -9762,7 +9762,11 @@ a {
   }
 
   .header-group {
-    display: none;
+    /*display: none;*/
+  }
+
+  .mynft {
+  	  display: none;
   }
 
   .roadmap-wrap {
@@ -12048,7 +12052,7 @@ a {
     width: 250px;
     margin-top: 0px;
     margin-right: 12px;
-    margin-left: 12px;
+    margin-left: 45px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;

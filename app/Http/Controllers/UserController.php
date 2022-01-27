@@ -21,21 +21,22 @@ class UserController extends Controller
 
     public function funape($id=1)
     {
-        $path=url('/').'/metadata.json';
+        $path=url('metadata').'/'.$id.'.json';
         $json = json_decode(file_get_contents($path), true); 
        
     	$data=array();
-        $id = $id - 1;
-        $data['id']=$json[$id]['id'];
-        $data['dna']=$json[$id]['dna'];
-    	$data['name']=$json[$id]['name'];
-    	$data['description']=$json[$id]['description'];
-        $data['image']=url('ape').'/'.$id.'.png';
-    	$data['filename']=$json[$id]['filename'];
-        $data['external_url']='https://www.funnyapeclub.com/';
-    	$data['rarity']=$json[$id]['rarity'];
-    	$data['attributes']=$json[$id]['attributes'];
-    	return response()->json($data);
+     //    $id = $id - 1;
+     //    $data['id']=$json[$id]['id'];
+     //    $data['dna']=$json[$id]['dna'];
+    	// $data['name']=$json[$id]['name'];
+    	// $data['description']=$json[$id]['description'];
+     //    $data['image']=url('ape').'/'.$id.'.png';
+    	// $data['filename']=$json[$id]['filename'];
+     //    $data['external_url']='https://www.funnyapeclub.com/';
+    	// $data['rarity']=$json[$id]['rarity'];
+    	// $data['attributes']=$json[$id]['attributes'];
+        $json['image']=url('ape').'/'.$id.'.png';
+    	return response()->json($json);
     	
     }
 
@@ -51,17 +52,20 @@ class UserController extends Controller
     	return view('mytoken');
     }
 
-    public function getimage()
+     public function getrare()
     {
-    	header('Content-Type: image/png');
-
-$bg = imagecreatefrompng(url('punk').'/2.png');
-$img = imagecreatefrompng(url('punk').'/black-army-cap.png');
-$img2 = imagecreatefrompng(url('punk').'/black-yellow-jacket.png');
-
-imagecopymerge($bg, $img, 0, 0, 0, 0, imagesx($bg), imagesy($bg), 75);
-imagecopymerge($bg, $img2, 0, 0, 0, 0, imagesx($bg), imagesy($bg), 75);
-
-imagepng($bg, null, 9);
+        for($i=5760;$i<=10000;$i++)
+        {
+        $path=url('metadata').'/'.$i.'.json';
+        $json = json_decode(file_get_contents($path), true); 
+        foreach ($json['attributes'] as $key => $val) {
+          if($val['trait_type']=='Hat' && $val['value']=='nbhb')
+          {
+            echo $json['edition'];
+            echo "<br>";
+          }
+        }
+        }
+        
     }
 }

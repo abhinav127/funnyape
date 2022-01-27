@@ -16,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [UserController::class, 'index']);
-Route::get('mint', [UserController::class, 'home']);
+//Route::get('/', [UserController::class, 'index']);
+Route::get('/', [UserController::class, 'home']);
 Route::get('funape/{id}', [UserController::class, 'funape']);
 Route::get('token/{id}', [UserController::class, 'token']);
 Route::get('mytoken', [UserController::class, 'mytoken']);
-Route::get('getimage', [UserController::class, 'getimage']);
